@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+
+
+<!-- 
+const App = () => {
+  const [query, setQuery] = useState("");
+  const [isPending, startTransition] = useTransition();
+  const { users, isLoading } = useFetchUsers();
+  const filteredUsers = useFilteredUsers(users, query);
+
+  
+  const handleFilter = useCallback((value) => {
+    setQuery(value);
+  }, []);
+
+  return (
+    <div className="container">
+      <h1>Пользователи приложения</h1>
+      <div className="search-bar">
+        <Searchbar query={query} handleFilter={handleFilter} />
+      </div>
+      {isPending && <p>Фильтрация...</p>}
+      {isLoading ? (
+        <p>Загрузка данных...</p>
+      ) : (
+        <div className="users-list">
+          {filteredUsers.map((user) => (
+            <UsersCard key={user.login.uuid} user={user} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}; -->
